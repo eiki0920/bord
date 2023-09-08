@@ -19,9 +19,15 @@ export const ThreadsList = () => {
 
   return (
     <>
-      {threads.map((thread) => (
-        <p key={thread.id}>{thread.title}</p>
-      ))}
+      <div className="main">
+        <h2>新着スレッド</h2>
+
+        <div className="ViewThreads">
+          {threads.map((thread) => (
+            <p key={thread.id}>{thread.title}</p>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
