@@ -18,20 +18,14 @@ function New() {
       }
     )
       .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          // エラーレスポンスを受け取った場合の処理
-          console.log("リクエストが失敗しました");
-        }
+        return response.json();
       })
       .then((data) => {
         setText("");
         console.log(data);
       })
       .catch((error) => {
-        // リクエスト送信中にエラーが発生した場合の処理
-        console.log("エラーが発生しました: " + error.message);
+        console.log("エラーが発生しました: ");
       });
   };
 

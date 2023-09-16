@@ -30,11 +30,30 @@ header a {
   height: 800px;
 }
 
-.ViewThreads p {
+.ViewThreads a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
   border-bottom: solid 1px rgb(93, 87, 87);
   height: 40px;
   width: 90%;
   margin: 0;
   margin-bottom: 10px;
+  padding: 10px;
+}
+
+.ViewThreadComments {
+  background-color: rgb(196, 190, 190);
+  height: 800px;
+}
+
+.ViewThreadComments li {
+  list-style: none;
+  border-bottom: solid 1px rgb(93, 87, 87);
+  height: auto;
+  width: 90%;
+  height: auto;
+  margin: 0;
+  margin-bottom: 20px;
   padding: 10px;
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const ThreadsList = () => {
   const [threads, setThreads] = useState([]);
@@ -24,7 +25,9 @@ export const ThreadsList = () => {
 
         <div className="ViewThreads">
           {threads.map((thread) => (
-            <p key={thread.id}>{thread.title}</p>
+            <Link to={`/thread/${thread.id}`} key={thread.id}>
+              {thread.title}
+            </Link>
           ))}
         </div>
       </div>
