@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { CommentCreate } from "./commentCreate";
 
 export const ThreadComment = () => {
   const params = useParams();
@@ -8,7 +9,7 @@ export const ThreadComment = () => {
 
   useEffect(() => {
     fetch(
-      `https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads/${params.thread_id}/posts?offset=1`
+      `https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads/${params.thread_id}/posts?offset=0`
     )
       .then((response) => {
         return response.json();
@@ -38,6 +39,8 @@ export const ThreadComment = () => {
         ) : (
           <span>コメントはありません</span>
         )}
+
+        <CommentCreate threadId={params.thread_id}></CommentCreate>
       </div>
     </>
   );
