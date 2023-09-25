@@ -2,14 +2,14 @@ import "./App.css";
 import { ThreadsList } from "./component/threads";
 import New from "./component/createThread";
 import { ThreadComment } from "./component/threadComments";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
       <div className="App">
         <header>
-          <a href="/">掲示板</a>
-          <a href="/thread/new">新しいスレッドを立てる</a>
+          <Link to="/">掲示板</Link>
+          <Link to="/thread/new">新しいスレッドを立てる</Link>
         </header>
 
         <Routes>

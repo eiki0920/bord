@@ -35,10 +35,15 @@ export const CommentCreate = (props) => {
 
   return (
     <>
-      <h2>スレッドにコメントをしよう</h2>
-      <div className="form">
-        <input value={text} onChange={(event) => setText(event.target.value)} />
-        <button onClick={onClickButton}>送信</button>
+      <div id="comment">
+        <h2>スレッドにコメントをしよう</h2>
+        <form>
+          <input
+            value={text}
+            onChange={(event) => setText(event.target.value)}
+          />
+          <button onClick={onClickButton}>送信</button>
+        </form>
       </div>
     </>
   );

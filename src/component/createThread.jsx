@@ -32,10 +32,10 @@ function New() {
   return (
     <>
       <h2>新しいスレッドを立てよう！！</h2>
-      <div className="form">
+      <form className="form">
         <input value={text} onChange={(event) => setText(event.target.value)} />
         <button onClick={onClickButton}>送信</button>
-      </div>
+      </form>
     </>
   );
 }

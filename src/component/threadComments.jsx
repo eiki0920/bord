@@ -28,17 +28,13 @@ export const ThreadComment = () => {
   return (
     <>
       <div className="main">
-        <h2>新着スレッド</h2>
+        <h2>コメント</h2>
 
-        {comments ? (
-          <ul className="ViewThreadComments">
-            {comments.map((comment) => (
-              <li key={comment.id}>{comment.post}</li>
-            ))}
-          </ul>
-        ) : (
-          <span>コメントはありません</span>
-        )}
+        <ul className="ViewThreadComments">
+          {comments.map((comment) => (
+            <li key={comment.id}>{comment.post}</li>
+          ))}
+        </ul>
 
         <CommentCreate threadId={params.thread_id} />
       </div>

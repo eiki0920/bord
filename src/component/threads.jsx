@@ -7,7 +7,7 @@ export const ThreadsList = () => {
 
   useEffect(() => {
     fetch(
-      "https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads?offset=1"
+      "https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads?offset=0"
     )
       .then((response) => {
         return response.json();

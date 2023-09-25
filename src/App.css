@@ -57,3 +57,19 @@ header a {
   margin-bottom: 20px;
   padding: 10px;
 }
+
+#comment {
+  height: 150px;
+}
+
+#comment input {
+  width: 250px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#comment button {
+  cursor: pointer;
+  padding: 3px 4px;
+}
