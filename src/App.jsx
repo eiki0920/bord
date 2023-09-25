@@ -13,12 +13,9 @@ function App() {
         </header>
 
         <Routes>
-          <Route path="/" element={<ThreadsList></ThreadsList>}></Route>
-          <Route path="/thread/new" element={<New></New>}></Route>
-          <Route
-            path="/thread/:thread_id"
-            element={<ThreadComment></ThreadComment>}
-          ></Route>
+          <Route path="/" element={<ThreadsList />} />
+          <Route path="/thread/new" element={<New />} />
+          <Route path="/thread/:thread_id" element={<ThreadComment />} />
         </Routes>
       </div>
     </>

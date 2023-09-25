@@ -40,7 +40,7 @@ export const ThreadComment = () => {
           <span>コメントはありません</span>
         )}
 
-        <CommentCreate threadId={params.thread_id}></CommentCreate>
+        <CommentCreate threadId={params.thread_id} />
       </div>
     </>
   );
